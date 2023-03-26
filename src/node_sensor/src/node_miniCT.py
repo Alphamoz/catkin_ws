@@ -132,7 +132,6 @@ class Reply(object):
         self.dataformat = 'NMEA'
         self.dataunits = None
         self.depth = None
-
         self.parse()
 
     def parse(self):

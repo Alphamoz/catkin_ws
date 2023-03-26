@@ -113,18 +113,18 @@ void NavQuestNode::onInit()
 	{
 		//Advertise beam data
 		// pub_dvl = nh.advertise<cola2_msgs::LinkquestDvl>("/gb_navigation/DVL", 1);
-		beam_pub["velo_rad"].reset(new NavQuestBP(nh, "velo_rad"));
-		beam_pub["wvelo_rad"].reset(new NavQuestBP(nh, "wvelo_rad"));
-		beam_pub["altitude_beams"].reset(new NavQuestBP(nh, "altitude_beams"));
-		speed_pub["velo_instrument"].reset(
-				new TwistPublisher(nh, "velo_instrument", "dvl_frame"));
-		speed_pub["velo_earth"].reset(
-				new TwistPublisher(nh, "velo_earth", "local"));
-		speed_pub["water_velo_instrument"].reset(
-				new TwistPublisher(nh, "water_velo_instrument", "dvl_frame"));
-		speed_pub["water_velo_earth"].reset(
-				new TwistPublisher(nh, "water_velo_earth", "local"));
-		lock = nh.advertise<std_msgs::Bool>("dvl_bottom",1);
+		// beam_pub["velo_rad"].reset(new NavQuestBP(nh, "velo_rad"));
+		// beam_pub["wvelo_rad"].reset(new NavQuestBP(nh, "wvelo_rad"));
+		// beam_pub["altitude_beams"].reset(new NavQuestBP(nh, "altitude_beams"));
+		// speed_pub["velo_instrument"].reset(
+		// 		new TwistPublisher(nh, "velo_instrument", "dvl_frame"));
+		// speed_pub["velo_earth"].reset(
+		// 		new TwistPublisher(nh, "velo_earth", "local"));
+		// speed_pub["water_velo_instrument"].reset(
+		// 		new TwistPublisher(nh, "water_velo_instrument", "dvl_frame"));
+		// speed_pub["water_velo_earth"].reset(
+		// 		new TwistPublisher(nh, "water_velo_earth", "local"));
+		// lock = nh.advertise<std_msgs::Bool>("dvl_bottom",1);
 		// altitude = nh.advertise<std_msgs::Float32>("altitude",1);
 		// imuPub = nh.advertise<auv_msgs::RPY>("dvl_rpy",1);
 

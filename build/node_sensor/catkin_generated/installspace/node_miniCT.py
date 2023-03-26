@@ -3,6 +3,7 @@
 
 import rospy
 import serial
+# must install bitstring using pip
 import bitstring
 import binascii
 import select
@@ -131,7 +132,6 @@ class Reply(object):
         self.dataformat = 'NMEA'
         self.dataunits = None
         self.depth = None
-
         self.parse()
 
     def parse(self):
@@ -197,9 +197,9 @@ class Command(object):
 
         self.id = id
 
-        self.payload = payload if payload else BitStream()
+        self.payload = payload if payload else bitstring.BitStream()
 
-        self.command = command if command else BitStream()
+        self.command = command if command else bitstring.BitStream()
 
     def serialize(self):
         """
@@ -297,11 +297,11 @@ class Socket(object):
                     pass
 
             # Initialize empty packet where the received stream will be saved
-            packet = BitStream()
+            packet = bitstring.BitStream()
 
             if expected_reply == '>':
                 message_id = Message.READY_2_CONFIGURE
-                rospy.logdebug("Sonar altimeter in configuration mode")
+                rospy.logdebug("MiniCT in configuration mode")
                 reply = Reply(packet.append("0x{:02X}".format(ord('>'))), id=message_id)
                 return reply
 
@@ -315,13 +315,16 @@ class Socket(object):
             # Convert each caracter from received string stream in the bitstream
             while True:
                 current_line = self.conn.readline()
+                rospy.logdebug("Current read line: " + current_line)
                 for char in current_line:
                     # This saves what is inside ord(char) in a two digit hex
                     packet.append("0x{:02X}".format(ord(char)))
+                rospy.logdebug(packet)
 
                 # Try to parse
                 try:
                     reply = Reply(packet, id = message_id)
+                    rospy.logdebug("inside Reply " + reply)
                     break
                 except PacketIncomplete:
                     rospy.logdebug("Received packet incomplete")
@@ -333,7 +336,6 @@ class Socket(object):
             #  if code == errno.EINTR:
             #      raise KeyboardInterrupt()
              raise
-
         rospy.logdebug("Received %s: %s", reply.name, reply.payload)
         return reply
 
@@ -443,14 +445,20 @@ class MiniCT(object):
                 self.preempt()
                 return
             # Ask sonar to send a single measurement
+            # self.conn.read()
             self.conn.send(Message.MEASURE)
 
             # Get the scan data
             try:
                 data = self.get(Message.DATA,wait = 1)
+                print(data)
+                # print(data.payload, data.id, data.name)
                 # print(data.payload) # For debugging only
-                self.range = convert_string_float(data.payload)
-                self.depth = convert_string_float(data.depth)
+                # please get sensor data to self.
+                # self.range=data.payload
+                # self.depth=data.depth
+                # self.range = convert_string_float(data.payload)
+                # self.depth = convert_string_float(data.depth)
                 timeout_count = 0
             except TimeoutError:
                 timeout_count += 1
@@ -464,6 +472,7 @@ class MiniCT(object):
             # Publish extracted data in personalised msg
             MiniCTmessage = rospy.Publisher('messageMiniCT',miniCTmsg, queue_size=10)
             miniCT = miniCTmsg()
+            # please get sensor data to miniCTmsg.
             miniCT.temperature = self.temperature
             miniCT.conductivity = self.conductivity
             # msg.range.range = self.range
@@ -515,8 +524,9 @@ class MiniCT(object):
             else:
                 rospy.logwarn("Received unexpected %s message", reply.name)
         # Timeout
-        rospy.logerr("Timed out before receiving message: %s", expected_name)
-        raise TimeoutError()
+        # **COMMENTED 
+        # rospy.logerr("Timed out before receiving message: %s", expected_name)
+        # raise TimeoutError()
 
     def preempt(self):
         """

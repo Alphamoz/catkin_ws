@@ -1493,6 +1493,7 @@ node_sensor/preinstall:
 # Target rules for target node_sensor/CMakeFiles/node_DVL.dir
 
 # All Build rule for target.
+node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 node_sensor/CMakeFiles/node_DVL.dir/all: glider_msg/CMakeFiles/glider_msg_generate_messages_eus.dir/all
 node_sensor/CMakeFiles/node_DVL.dir/all: glider_msg/CMakeFiles/glider_msg_generate_messages_cpp.dir/all
 node_sensor/CMakeFiles/node_DVL.dir/all: glider_msg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
@@ -1532,7 +1533,6 @@ node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/geometry_msgs_ge
 node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
 node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-node_sensor/CMakeFiles/node_DVL.dir/all: node_sensor/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/depend
 	$(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=24,25 "Built target node_DVL"

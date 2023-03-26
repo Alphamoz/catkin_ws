@@ -47,12 +47,6 @@ Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_date
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=Boost_DIR-NOTFOUND
 
-//Boost glider_msg library (debug)
-Boost_GLIDER_MSG_LIBRARY_DEBUG:FILEPATH=Boost_GLIDER_MSG_LIBRARY_DEBUG-NOTFOUND
-
-//Boost glider_msg library (release)
-Boost_GLIDER_MSG_LIBRARY_RELEASE:FILEPATH=Boost_GLIDER_MSG_LIBRARY_RELEASE-NOTFOUND
-
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
@@ -287,9 +281,6 @@ EMPY_SCRIPT:STRING=/usr/bin/empy
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
-//The directory containing a CMake configuration file for Eigen.
-Eigen_DIR:PATH=Eigen_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
@@ -365,9 +356,6 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
-//The directory containing a CMake configuration file for bitstring.
-bitstring_DIR:PATH=bitstring_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
@@ -382,9 +370,6 @@ control_actuator_SOURCE_DIR:STATIC=/home/jason/catkin_ws/src/control_actuator
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
-
-//The directory containing a CMake configuration file for dvlmsg.
-dvlmsg_DIR:PATH=dvlmsg_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
@@ -556,10 +541,6 @@ Boost_DATE_TIME_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 Boost_DATE_TIME_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_GLIDER_MSG_LIBRARY_DEBUG
-Boost_GLIDER_MSG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_GLIDER_MSG_LIBRARY_RELEASE
-Boost_GLIDER_MSG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_INCLUDE_DIR
 Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
@@ -801,7 +782,7 @@ PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
 //Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;glider_msg;regex;serialization;system;thread
+_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;regex;serialization;system;thread
 //Last used Boost_INCLUDE_DIR value.
 _Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
 //Last used Boost_LIBRARY_DIR_DEBUG value.
