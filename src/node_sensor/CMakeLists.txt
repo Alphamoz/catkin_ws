@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   # dvlmsg
   glider_msg
   tf2_ros
+  serial
 )
 
 ## System dependencies are found with CMake's conventions
@@ -155,6 +156,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(node_DVL src/node_DVL.cpp)
+add_executable(node_miniCT src/node_miniCT.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -171,6 +173,13 @@ endif()
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(node_DVL
+  ${catkin_LIBRARIES}
+  ${Boost_THREAD_LIBRARY}
+  ${Boost_REGEX_LIBRARY}
+  ${Boost_SERIALIZATION_LIBRARY}
+)
+
+target_link_libraries(node_miniCT
   ${catkin_LIBRARIES}
   ${Boost_THREAD_LIBRARY}
   ${Boost_REGEX_LIBRARY}

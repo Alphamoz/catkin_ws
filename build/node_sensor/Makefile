@@ -303,6 +303,21 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
+node_sensor/CMakeFiles/node_miniCT.dir/rule:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 node_sensor/CMakeFiles/node_miniCT.dir/rule
+.PHONY : node_sensor/CMakeFiles/node_miniCT.dir/rule
+
+# Convenience name for target.
+node_miniCT: node_sensor/CMakeFiles/node_miniCT.dir/rule
+
+.PHONY : node_miniCT
+
+# fast build rule for target.
+node_miniCT/fast:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/build
+.PHONY : node_miniCT/fast
+
+# Convenience name for target.
 node_sensor/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/jason/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 node_sensor/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : node_sensor/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -509,6 +524,33 @@ src/node_DVL.cpp.s:
 	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/node_DVL.cpp.s
 .PHONY : src/node_DVL.cpp.s
 
+src/node_miniCT.o: src/node_miniCT.cpp.o
+
+.PHONY : src/node_miniCT.o
+
+# target to build an object file
+src/node_miniCT.cpp.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o
+.PHONY : src/node_miniCT.cpp.o
+
+src/node_miniCT.i: src/node_miniCT.cpp.i
+
+.PHONY : src/node_miniCT.i
+
+# target to preprocess a source file
+src/node_miniCT.cpp.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.i
+.PHONY : src/node_miniCT.cpp.i
+
+src/node_miniCT.s: src/node_miniCT.cpp.s
+
+.PHONY : src/node_miniCT.s
+
+# target to generate assembly for a file
+src/node_miniCT.cpp.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.s
+.PHONY : src/node_miniCT.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -526,6 +568,7 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
+	@echo "... node_miniCT"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... actionlib_msgs_generate_messages_cpp"
@@ -546,6 +589,9 @@ help:
 	@echo "... src/node_DVL.o"
 	@echo "... src/node_DVL.i"
 	@echo "... src/node_DVL.s"
+	@echo "... src/node_miniCT.o"
+	@echo "... src/node_miniCT.i"
+	@echo "... src/node_miniCT.s"
 .PHONY : help
 
 

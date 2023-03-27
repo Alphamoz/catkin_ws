@@ -112,6 +112,7 @@ node_DVL_EXTERNAL_OBJECTS =
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /opt/ros/melodic/lib/libserial.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
@@ -126,6 +127,7 @@ node_DVL_EXTERNAL_OBJECTS =
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /opt/ros/melodic/lib/libserial.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL: node_sensor/CMakeFiles/node_DVL.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jason/catkin_ws/devel/lib/node_sensor/node_DVL"

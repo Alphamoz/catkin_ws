@@ -779,6 +779,19 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named node_miniCT
+
+# Build rule for target.
+node_miniCT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_miniCT
+.PHONY : node_miniCT
+
+# fast build rule for target.
+node_miniCT/fast:
+	$(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/build
+.PHONY : node_miniCT/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -994,6 +1007,7 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
+	@echo "... node_miniCT"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"

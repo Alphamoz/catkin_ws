@@ -103,6 +103,7 @@
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/actionlib_generate_messages_lisp.dir
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/actionlib_generate_messages_cpp.dir
+/home/jason/catkin_ws/build/node_sensor/CMakeFiles/node_miniCT.dir
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/install.dir
 /home/jason/catkin_ws/build/node_sensor/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir

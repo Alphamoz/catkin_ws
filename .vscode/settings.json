@@ -85,5 +85,6 @@
         "cstdbool": "cpp",
         "random": "cpp",
         "core": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
