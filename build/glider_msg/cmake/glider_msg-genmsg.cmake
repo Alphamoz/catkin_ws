@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "glider_msg: 3 messages, 0 services")
+message(STATUS "glider_msg: 4 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,14 +22,19 @@ add_custom_target(_glider_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "glider_msg" "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" ""
 )
 
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_custom_target(_glider_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "glider_msg" "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" "std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_custom_target(_glider_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "glider_msg" "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_custom_target(_glider_msg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "glider_msg" "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "glider_msg" "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" ""
 )
 
 #
@@ -40,6 +45,12 @@ add_custom_target(_glider_msg_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(glider_msg
   "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/glider_msg
+)
+_generate_msg_cpp(glider_msg
+  "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/glider_msg
@@ -73,9 +84,11 @@ add_dependencies(glider_msg_generate_messages glider_msg_generate_messages_cpp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_cpp _glider_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_dependencies(glider_msg_generate_messages_cpp _glider_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_cpp _glider_msg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_cpp _glider_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -89,6 +102,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS glider_msg_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(glider_msg
   "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/glider_msg
+)
+_generate_msg_eus(glider_msg
+  "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/glider_msg
@@ -122,9 +141,11 @@ add_dependencies(glider_msg_generate_messages glider_msg_generate_messages_eus)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_eus _glider_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_dependencies(glider_msg_generate_messages_eus _glider_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_eus _glider_msg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_eus _glider_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -138,6 +159,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS glider_msg_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(glider_msg
   "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/glider_msg
+)
+_generate_msg_lisp(glider_msg
+  "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/glider_msg
@@ -171,9 +198,11 @@ add_dependencies(glider_msg_generate_messages glider_msg_generate_messages_lisp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_lisp _glider_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_dependencies(glider_msg_generate_messages_lisp _glider_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_lisp _glider_msg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_lisp _glider_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -187,6 +216,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS glider_msg_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(glider_msg
   "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/glider_msg
+)
+_generate_msg_nodejs(glider_msg
+  "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/glider_msg
@@ -220,9 +255,11 @@ add_dependencies(glider_msg_generate_messages glider_msg_generate_messages_nodej
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_nodejs _glider_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_dependencies(glider_msg_generate_messages_nodejs _glider_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_nodejs _glider_msg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_nodejs _glider_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -236,6 +273,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS glider_msg_generate_messages_nodejs
 ### Generating Messages
 _generate_msg_py(glider_msg
   "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/glider_msg
+)
+_generate_msg_py(glider_msg
+  "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/glider_msg
@@ -269,9 +312,11 @@ add_dependencies(glider_msg_generate_messages glider_msg_generate_messages_py)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_py _glider_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+add_dependencies(glider_msg_generate_messages_py _glider_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_py _glider_msg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg" NAME_WE)
+get_filename_component(_filename "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg" NAME_WE)
 add_dependencies(glider_msg_generate_messages_py _glider_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

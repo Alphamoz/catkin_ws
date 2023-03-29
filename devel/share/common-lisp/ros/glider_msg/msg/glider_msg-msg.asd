@@ -5,6 +5,8 @@
   :depends-on (:roslisp-msg-protocol :roslisp-utils :std_msgs-msg
 )
   :components ((:file "_package")
+    (:file "altimsg" :depends-on ("_package_altimsg"))
+    (:file "_package_altimsg" :depends-on ("_package"))
     (:file "dvlmsg" :depends-on ("_package_dvlmsg"))
     (:file "_package_dvlmsg" :depends-on ("_package"))
     (:file "imumsg" :depends-on ("_package_imumsg"))

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/jason/catkin_ws/build
 include glider_msg/CMakeFiles/glider_msg_generate_messages_eus.dir/progress.make
 
 glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/miniCTmsg.l
+glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/altimsg.l
 glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/dvlmsg.l
 glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/imumsg.l
 glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/manifest.l
@@ -64,24 +65,30 @@ glider_msg/CMakeFiles/glider_msg_generate_messages_eus: /home/jason/catkin_ws/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from glider_msg/miniCTmsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg
 
+/home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/altimsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/altimsg.l: /home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from glider_msg/altimsg.msg"
+	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg
+
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/dvlmsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/dvlmsg.l: /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/dvlmsg.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from glider_msg/dvlmsg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from glider_msg/dvlmsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg
 
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/imumsg.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/imumsg.l: /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/imumsg.l: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from glider_msg/imumsg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from glider_msg/imumsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg
 
 /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for glider_msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for glider_msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg glider_msg std_msgs
 
 glider_msg_generate_messages_eus: glider_msg/CMakeFiles/glider_msg_generate_messages_eus
 glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/miniCTmsg.l
+glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/altimsg.l
 glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/dvlmsg.l
 glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/msg/imumsg.l
 glider_msg_generate_messages_eus: /home/jason/catkin_ws/devel/share/roseus/ros/glider_msg/manifest.l

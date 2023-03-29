@@ -42,6 +42,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg"
     "/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg"
     "/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg"
+    "/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
     )
 endif()
 

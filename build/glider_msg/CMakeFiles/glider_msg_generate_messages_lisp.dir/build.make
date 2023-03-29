@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/jason/catkin_ws/build
 include glider_msg/CMakeFiles/glider_msg_generate_messages_lisp.dir/progress.make
 
 glider_msg/CMakeFiles/glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/miniCTmsg.lisp
+glider_msg/CMakeFiles/glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/altimsg.lisp
 glider_msg/CMakeFiles/glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/dvlmsg.lisp
 glider_msg/CMakeFiles/glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/imumsg.lisp
 
@@ -63,20 +64,26 @@ glider_msg/CMakeFiles/glider_msg_generate_messages_lisp: /home/jason/catkin_ws/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from glider_msg/miniCTmsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg
 
+/home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/altimsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/altimsg.lisp: /home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from glider_msg/altimsg.msg"
+	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg
+
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/dvlmsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/dvlmsg.lisp: /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/dvlmsg.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from glider_msg/dvlmsg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from glider_msg/dvlmsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg
 
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/imumsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/imumsg.lisp: /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg
 /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/imumsg.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from glider_msg/imumsg.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from glider_msg/imumsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg
 
 glider_msg_generate_messages_lisp: glider_msg/CMakeFiles/glider_msg_generate_messages_lisp
 glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/miniCTmsg.lisp
+glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/altimsg.lisp
 glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/dvlmsg.lisp
 glider_msg_generate_messages_lisp: /home/jason/catkin_ws/devel/share/common-lisp/ros/glider_msg/msg/imumsg.lisp
 glider_msg_generate_messages_lisp: glider_msg/CMakeFiles/glider_msg_generate_messages_lisp.dir/build.make

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg;/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg;/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg"
+messages_str = "/home/jason/catkin_ws/src/glider_msg/msg/miniCTmsg.msg;/home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg;/home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg;/home/jason/catkin_ws/src/glider_msg/msg/altimsg.msg"
 services_str = ""
 pkg_name = "glider_msg"
 dependencies_str = "std_msgs"
