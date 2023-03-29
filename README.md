@@ -7,7 +7,8 @@ How To
 4. catkin_make
 5. source devel/setup.bash
 
-## <b>Do not forget to install pip and install bitstream library</b>
+## <b>Do not forget to install pip and install bitstring library</b>
 To install bitstream lib in ubuntu: 
 1. sudo apt install python-pip
-2. pip install 
+2. pip install bitstring
+3. sudo apt-get install ros-melodic-rosserial

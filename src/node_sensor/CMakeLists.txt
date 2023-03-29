@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  # dvlmsg
   glider_msg
   tf2_ros
   serial
@@ -155,8 +154,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(node_DVL src/node_DVL.cpp)
-add_executable(node_miniCT src/node_miniCT.cpp)
+add_executable(node_DVL src/dvl/node_DVL.cpp)
+add_executable(node_miniCT src/miniCT/node_miniCT.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -200,7 +199,7 @@ target_link_libraries(node_miniCT
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-catkin_install_python(PROGRAMS src/node_AltiVA500.py src/node_DVL.py src/node_IMUGPS.py src/node_miniCT.py
+catkin_install_python(PROGRAMS src/alti/node_AltiVA500.py src/dvl/node_DVL.py src/imu/node_IMUGPS.py src/miniCT/node_miniCT.py src/imu/node_navigasi.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

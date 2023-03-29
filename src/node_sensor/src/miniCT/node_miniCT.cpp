@@ -5,11 +5,6 @@
 #include <glider_msg/miniCTmsg.h>
 #include <sstream>
 
-void serialCallback(const std_msgs::String::ConstPtr &msg)
-{
-    ROS_INFO("I heard: [%s]", msg->data.c_str());
-}
-
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "serial_reader");
@@ -21,7 +16,7 @@ int main(int argc, char **argv)
     ser.setTimeout(serial::Timeout::max(), 100, 0, 100, 0);
 
     ros::Publisher miniCTMessager = nh.advertise<glider_msg::miniCTmsg>("messageMiniCT", 1000);
-    ros::Rate rate(10);
+    ros::Rate rate(100);
 
     while (ros::ok())
     {
@@ -56,6 +51,7 @@ int main(int argc, char **argv)
             msg.temperature = temperature;
 
             miniCTMessager.publish(msg);
+            
         }
         else
         {
