@@ -152,7 +152,7 @@ sensor_msgs/Imu.h
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
 
-/home/jason/catkin_ws/src/node_sensor/src/node_DVL.cpp
+/home/jason/catkin_ws/src/node_sensor/src/dvl/node_DVL.cpp
 labust/navigation/NavQuestNode.hpp
 -
 labust/navigation/DVLdataClass.h

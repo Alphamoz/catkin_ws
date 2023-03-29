@@ -1,10 +1,12 @@
 
 "use strict";
 
-let dvlmsg = require('./dvlmsg.js');
 let miniCTmsg = require('./miniCTmsg.js');
+let imumsg = require('./imumsg.js');
+let dvlmsg = require('./dvlmsg.js');
 
 module.exports = {
-  dvlmsg: dvlmsg,
   miniCTmsg: miniCTmsg,
+  imumsg: imumsg,
+  dvlmsg: dvlmsg,
 };

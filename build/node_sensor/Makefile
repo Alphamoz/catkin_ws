@@ -438,6 +438,21 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+node_sensor/CMakeFiles/node_IMUGPS.dir/rule:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 node_sensor/CMakeFiles/node_IMUGPS.dir/rule
+.PHONY : node_sensor/CMakeFiles/node_IMUGPS.dir/rule
+
+# Convenience name for target.
+node_IMUGPS: node_sensor/CMakeFiles/node_IMUGPS.dir/rule
+
+.PHONY : node_IMUGPS
+
+# fast build rule for target.
+node_IMUGPS/fast:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/build
+.PHONY : node_IMUGPS/fast
+
+# Convenience name for target.
 node_sensor/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
 	cd /home/jason/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 node_sensor/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : node_sensor/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
@@ -497,59 +512,167 @@ tf2_msgs_generate_messages_cpp/fast:
 	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make node_sensor/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
-src/node_DVL.o: src/node_DVL.cpp.o
+src/dvl/node_DVL.o: src/dvl/node_DVL.cpp.o
 
-.PHONY : src/node_DVL.o
-
-# target to build an object file
-src/node_DVL.cpp.o:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/node_DVL.cpp.o
-.PHONY : src/node_DVL.cpp.o
-
-src/node_DVL.i: src/node_DVL.cpp.i
-
-.PHONY : src/node_DVL.i
-
-# target to preprocess a source file
-src/node_DVL.cpp.i:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/node_DVL.cpp.i
-.PHONY : src/node_DVL.cpp.i
-
-src/node_DVL.s: src/node_DVL.cpp.s
-
-.PHONY : src/node_DVL.s
-
-# target to generate assembly for a file
-src/node_DVL.cpp.s:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/node_DVL.cpp.s
-.PHONY : src/node_DVL.cpp.s
-
-src/node_miniCT.o: src/node_miniCT.cpp.o
-
-.PHONY : src/node_miniCT.o
+.PHONY : src/dvl/node_DVL.o
 
 # target to build an object file
-src/node_miniCT.cpp.o:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o
-.PHONY : src/node_miniCT.cpp.o
+src/dvl/node_DVL.cpp.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/dvl/node_DVL.cpp.o
+.PHONY : src/dvl/node_DVL.cpp.o
 
-src/node_miniCT.i: src/node_miniCT.cpp.i
+src/dvl/node_DVL.i: src/dvl/node_DVL.cpp.i
 
-.PHONY : src/node_miniCT.i
+.PHONY : src/dvl/node_DVL.i
 
 # target to preprocess a source file
-src/node_miniCT.cpp.i:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.i
-.PHONY : src/node_miniCT.cpp.i
+src/dvl/node_DVL.cpp.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/dvl/node_DVL.cpp.i
+.PHONY : src/dvl/node_DVL.cpp.i
 
-src/node_miniCT.s: src/node_miniCT.cpp.s
+src/dvl/node_DVL.s: src/dvl/node_DVL.cpp.s
 
-.PHONY : src/node_miniCT.s
+.PHONY : src/dvl/node_DVL.s
 
 # target to generate assembly for a file
-src/node_miniCT.cpp.s:
-	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.s
-.PHONY : src/node_miniCT.cpp.s
+src/dvl/node_DVL.cpp.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_DVL.dir/build.make node_sensor/CMakeFiles/node_DVL.dir/src/dvl/node_DVL.cpp.s
+.PHONY : src/dvl/node_DVL.cpp.s
+
+src/imu/an_packet_protocol.o: src/imu/an_packet_protocol.c.o
+
+.PHONY : src/imu/an_packet_protocol.o
+
+# target to build an object file
+src/imu/an_packet_protocol.c.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/an_packet_protocol.c.o
+.PHONY : src/imu/an_packet_protocol.c.o
+
+src/imu/an_packet_protocol.i: src/imu/an_packet_protocol.c.i
+
+.PHONY : src/imu/an_packet_protocol.i
+
+# target to preprocess a source file
+src/imu/an_packet_protocol.c.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/an_packet_protocol.c.i
+.PHONY : src/imu/an_packet_protocol.c.i
+
+src/imu/an_packet_protocol.s: src/imu/an_packet_protocol.c.s
+
+.PHONY : src/imu/an_packet_protocol.s
+
+# target to generate assembly for a file
+src/imu/an_packet_protocol.c.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/an_packet_protocol.c.s
+.PHONY : src/imu/an_packet_protocol.c.s
+
+src/imu/node_IMUGPS.o: src/imu/node_IMUGPS.cpp.o
+
+.PHONY : src/imu/node_IMUGPS.o
+
+# target to build an object file
+src/imu/node_IMUGPS.cpp.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/node_IMUGPS.cpp.o
+.PHONY : src/imu/node_IMUGPS.cpp.o
+
+src/imu/node_IMUGPS.i: src/imu/node_IMUGPS.cpp.i
+
+.PHONY : src/imu/node_IMUGPS.i
+
+# target to preprocess a source file
+src/imu/node_IMUGPS.cpp.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/node_IMUGPS.cpp.i
+.PHONY : src/imu/node_IMUGPS.cpp.i
+
+src/imu/node_IMUGPS.s: src/imu/node_IMUGPS.cpp.s
+
+.PHONY : src/imu/node_IMUGPS.s
+
+# target to generate assembly for a file
+src/imu/node_IMUGPS.cpp.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/node_IMUGPS.cpp.s
+.PHONY : src/imu/node_IMUGPS.cpp.s
+
+src/imu/rs232/rs232.o: src/imu/rs232/rs232.c.o
+
+.PHONY : src/imu/rs232/rs232.o
+
+# target to build an object file
+src/imu/rs232/rs232.c.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/rs232/rs232.c.o
+.PHONY : src/imu/rs232/rs232.c.o
+
+src/imu/rs232/rs232.i: src/imu/rs232/rs232.c.i
+
+.PHONY : src/imu/rs232/rs232.i
+
+# target to preprocess a source file
+src/imu/rs232/rs232.c.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/rs232/rs232.c.i
+.PHONY : src/imu/rs232/rs232.c.i
+
+src/imu/rs232/rs232.s: src/imu/rs232/rs232.c.s
+
+.PHONY : src/imu/rs232/rs232.s
+
+# target to generate assembly for a file
+src/imu/rs232/rs232.c.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/rs232/rs232.c.s
+.PHONY : src/imu/rs232/rs232.c.s
+
+src/imu/spatial_packets.o: src/imu/spatial_packets.c.o
+
+.PHONY : src/imu/spatial_packets.o
+
+# target to build an object file
+src/imu/spatial_packets.c.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/spatial_packets.c.o
+.PHONY : src/imu/spatial_packets.c.o
+
+src/imu/spatial_packets.i: src/imu/spatial_packets.c.i
+
+.PHONY : src/imu/spatial_packets.i
+
+# target to preprocess a source file
+src/imu/spatial_packets.c.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/spatial_packets.c.i
+.PHONY : src/imu/spatial_packets.c.i
+
+src/imu/spatial_packets.s: src/imu/spatial_packets.c.s
+
+.PHONY : src/imu/spatial_packets.s
+
+# target to generate assembly for a file
+src/imu/spatial_packets.c.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_IMUGPS.dir/build.make node_sensor/CMakeFiles/node_IMUGPS.dir/src/imu/spatial_packets.c.s
+.PHONY : src/imu/spatial_packets.c.s
+
+src/miniCT/node_miniCT.o: src/miniCT/node_miniCT.cpp.o
+
+.PHONY : src/miniCT/node_miniCT.o
+
+# target to build an object file
+src/miniCT/node_miniCT.cpp.o:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o
+.PHONY : src/miniCT/node_miniCT.cpp.o
+
+src/miniCT/node_miniCT.i: src/miniCT/node_miniCT.cpp.i
+
+.PHONY : src/miniCT/node_miniCT.i
+
+# target to preprocess a source file
+src/miniCT/node_miniCT.cpp.i:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.i
+.PHONY : src/miniCT/node_miniCT.cpp.i
+
+src/miniCT/node_miniCT.s: src/miniCT/node_miniCT.cpp.s
+
+.PHONY : src/miniCT/node_miniCT.s
+
+# target to generate assembly for a file
+src/miniCT/node_miniCT.cpp.s:
+	cd /home/jason/catkin_ws/build && $(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.s
+.PHONY : src/miniCT/node_miniCT.cpp.s
 
 # Help Target
 help:
@@ -580,18 +703,31 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
+	@echo "... node_IMUGPS"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... install/strip"
 	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... src/node_DVL.o"
-	@echo "... src/node_DVL.i"
-	@echo "... src/node_DVL.s"
-	@echo "... src/node_miniCT.o"
-	@echo "... src/node_miniCT.i"
-	@echo "... src/node_miniCT.s"
+	@echo "... src/dvl/node_DVL.o"
+	@echo "... src/dvl/node_DVL.i"
+	@echo "... src/dvl/node_DVL.s"
+	@echo "... src/imu/an_packet_protocol.o"
+	@echo "... src/imu/an_packet_protocol.i"
+	@echo "... src/imu/an_packet_protocol.s"
+	@echo "... src/imu/node_IMUGPS.o"
+	@echo "... src/imu/node_IMUGPS.i"
+	@echo "... src/imu/node_IMUGPS.s"
+	@echo "... src/imu/rs232/rs232.o"
+	@echo "... src/imu/rs232/rs232.i"
+	@echo "... src/imu/rs232/rs232.s"
+	@echo "... src/imu/spatial_packets.o"
+	@echo "... src/imu/spatial_packets.i"
+	@echo "... src/imu/spatial_packets.s"
+	@echo "... src/miniCT/node_miniCT.o"
+	@echo "... src/miniCT/node_miniCT.i"
+	@echo "... src/miniCT/node_miniCT.s"
 .PHONY : help
 
 

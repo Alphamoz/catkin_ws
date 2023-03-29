@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jason/catkin_ws/devel/include/glider_msg/miniCTmsg.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/jason/catkin_ws/src/node_sensor/src/node_miniCT.cpp
+/home/jason/catkin_ws/src/node_sensor/src/miniCT/node_miniCT.cpp
 ros/ros.h
 -
 serial/serial.h

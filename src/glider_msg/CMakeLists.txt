@@ -51,6 +51,7 @@ add_message_files(
    FILES
    miniCTmsg.msg
    dvlmsg.msg
+   imumsg.msg
   #  Valeport_Altimeter.msg
   #  Spatial.msg
   #  Gps.msg

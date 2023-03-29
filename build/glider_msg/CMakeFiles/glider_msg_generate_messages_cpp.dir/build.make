@@ -55,6 +55,7 @@ include glider_msg/CMakeFiles/glider_msg_generate_messages_cpp.dir/progress.make
 
 glider_msg/CMakeFiles/glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/miniCTmsg.h
 glider_msg/CMakeFiles/glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/dvlmsg.h
+glider_msg/CMakeFiles/glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/imumsg.h
 
 
 /home/jason/catkin_ws/devel/include/glider_msg/miniCTmsg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -70,9 +71,17 @@ glider_msg/CMakeFiles/glider_msg_generate_messages_cpp: /home/jason/catkin_ws/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from glider_msg/dvlmsg.msg"
 	cd /home/jason/catkin_ws/src/glider_msg && /home/jason/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/include/glider_msg -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/jason/catkin_ws/devel/include/glider_msg/imumsg.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/jason/catkin_ws/devel/include/glider_msg/imumsg.h: /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg
+/home/jason/catkin_ws/devel/include/glider_msg/imumsg.h: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/jason/catkin_ws/devel/include/glider_msg/imumsg.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from glider_msg/imumsg.msg"
+	cd /home/jason/catkin_ws/src/glider_msg && /home/jason/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/include/glider_msg -e /opt/ros/melodic/share/gencpp/cmake/..
+
 glider_msg_generate_messages_cpp: glider_msg/CMakeFiles/glider_msg_generate_messages_cpp
 glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/miniCTmsg.h
 glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/dvlmsg.h
+glider_msg_generate_messages_cpp: /home/jason/catkin_ws/devel/include/glider_msg/imumsg.h
 glider_msg_generate_messages_cpp: glider_msg/CMakeFiles/glider_msg_generate_messages_cpp.dir/build.make
 
 .PHONY : glider_msg_generate_messages_cpp

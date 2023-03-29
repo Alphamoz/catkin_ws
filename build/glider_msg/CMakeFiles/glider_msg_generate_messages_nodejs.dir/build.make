@@ -55,6 +55,7 @@ include glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs.dir/progress.m
 
 glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/miniCTmsg.js
 glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/dvlmsg.js
+glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/imumsg.js
 
 
 /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/miniCTmsg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -68,9 +69,16 @@ glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs: /home/jason/catkin_ws
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from glider_msg/dvlmsg.msg"
 	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jason/catkin_ws/src/glider_msg/msg/dvlmsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg
 
+/home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/imumsg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/imumsg.js: /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg
+/home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/imumsg.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from glider_msg/imumsg.msg"
+	cd /home/jason/catkin_ws/build/glider_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/jason/catkin_ws/src/glider_msg/msg/imumsg.msg -Iglider_msg:/home/jason/catkin_ws/src/glider_msg/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p glider_msg -o /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg
+
 glider_msg_generate_messages_nodejs: glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs
 glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/miniCTmsg.js
 glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/dvlmsg.js
+glider_msg_generate_messages_nodejs: /home/jason/catkin_ws/devel/share/gennodejs/ros/glider_msg/msg/imumsg.js
 glider_msg_generate_messages_nodejs: glider_msg/CMakeFiles/glider_msg_generate_messages_nodejs.dir/build.make
 
 .PHONY : glider_msg_generate_messages_nodejs

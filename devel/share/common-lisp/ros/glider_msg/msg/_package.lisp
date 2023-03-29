@@ -3,6 +3,8 @@
   (:export
    "<DVLMSG>"
    "DVLMSG"
+   "<IMUMSG>"
+   "IMUMSG"
    "<MINICTMSG>"
    "MINICTMSG"
   ))

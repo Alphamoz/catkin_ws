@@ -11,4 +11,4 @@ How To
 To install bitstream lib in ubuntu: 
 1. sudo apt install python-pip
 2. pip install bitstring
-3. sudo apt-get install ros-melodic-rosserial
+3. sudo apt-get install ros-melodic-serial

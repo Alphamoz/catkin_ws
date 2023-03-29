@@ -68,3 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/node_sensor" TYPE PROGRAM FILES "/home/jason/catkin_ws/build/node_sensor/catkin_generated/installspace/node_miniCT.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/node_sensor" TYPE PROGRAM FILES "/home/jason/catkin_ws/build/node_sensor/catkin_generated/installspace/node_navigasi.py")
+endif()
+

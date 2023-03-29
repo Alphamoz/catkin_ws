@@ -57,38 +57,38 @@ include node_sensor/CMakeFiles/node_miniCT.dir/progress.make
 # Include the compile flags for this target's objects.
 include node_sensor/CMakeFiles/node_miniCT.dir/flags.make
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o: node_sensor/CMakeFiles/node_miniCT.dir/flags.make
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o: /home/jason/catkin_ws/src/node_sensor/src/node_miniCT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o"
-	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o -c /home/jason/catkin_ws/src/node_sensor/src/node_miniCT.cpp
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o: node_sensor/CMakeFiles/node_miniCT.dir/flags.make
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o: /home/jason/catkin_ws/src/node_sensor/src/miniCT/node_miniCT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jason/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o"
+	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o -c /home/jason/catkin_ws/src/node_sensor/src/miniCT/node_miniCT.cpp
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.i"
-	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jason/catkin_ws/src/node_sensor/src/node_miniCT.cpp > CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.i
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.i"
+	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jason/catkin_ws/src/node_sensor/src/miniCT/node_miniCT.cpp > CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.i
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.s"
-	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jason/catkin_ws/src/node_sensor/src/node_miniCT.cpp -o CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.s
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.s"
+	cd /home/jason/catkin_ws/build/node_sensor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jason/catkin_ws/src/node_sensor/src/miniCT/node_miniCT.cpp -o CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.s
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.requires:
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.requires:
 
-.PHONY : node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.requires
+.PHONY : node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.requires
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.provides: node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.requires
-	$(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.provides.build
-.PHONY : node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.provides
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.provides: node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.requires
+	$(MAKE) -f node_sensor/CMakeFiles/node_miniCT.dir/build.make node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.provides.build
+.PHONY : node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.provides
 
-node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.provides.build: node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o
+node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.provides.build: node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o
 
 
 # Object files for target node_miniCT
 node_miniCT_OBJECTS = \
-"CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o"
+"CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o"
 
 # External object files for target node_miniCT
 node_miniCT_EXTERNAL_OBJECTS =
 
-/home/jason/catkin_ws/devel/lib/node_sensor/node_miniCT: node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o
+/home/jason/catkin_ws/devel/lib/node_sensor/node_miniCT: node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o
 /home/jason/catkin_ws/devel/lib/node_sensor/node_miniCT: node_sensor/CMakeFiles/node_miniCT.dir/build.make
 /home/jason/catkin_ws/devel/lib/node_sensor/node_miniCT: /opt/ros/melodic/lib/libtf2_ros.so
 /home/jason/catkin_ws/devel/lib/node_sensor/node_miniCT: /opt/ros/melodic/lib/libactionlib.so
@@ -138,7 +138,7 @@ node_sensor/CMakeFiles/node_miniCT.dir/build: /home/jason/catkin_ws/devel/lib/no
 
 .PHONY : node_sensor/CMakeFiles/node_miniCT.dir/build
 
-node_sensor/CMakeFiles/node_miniCT.dir/requires: node_sensor/CMakeFiles/node_miniCT.dir/src/node_miniCT.cpp.o.requires
+node_sensor/CMakeFiles/node_miniCT.dir/requires: node_sensor/CMakeFiles/node_miniCT.dir/src/miniCT/node_miniCT.cpp.o.requires
 
 .PHONY : node_sensor/CMakeFiles/node_miniCT.dir/requires
 

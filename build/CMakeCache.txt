@@ -330,7 +330,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=ubuntu1804
+SITE:STRING=jason-VirtualBox
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE

@@ -156,7 +156,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(node_DVL src/dvl/node_DVL.cpp)
 add_executable(node_miniCT src/miniCT/node_miniCT.cpp)
-
+add_executable(node_IMUGPS src/imu/node_IMUGPS.cpp src/imu/rs232/rs232.c src/imu/rs232/rs232.h src/imu/an_packet_protocol.c src/imu/an_packet_protocol.h src/imu/spatial_packets.c src/imu/spatial_packets.h)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -167,7 +167,9 @@ add_executable(node_miniCT src/miniCT/node_miniCT.cpp)
 ## same as for the library above
 if(DEFINED catkin_EXPORTED_TARGETS)
   add_dependencies(node_DVL ${catkin_EXPORTED_TARGETS})
+  add_dependencies(node_IMUGPS ${catkin_EXPORTED_TARGETS})
 endif()
+
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
@@ -185,6 +187,13 @@ target_link_libraries(node_miniCT
   ${Boost_SERIALIZATION_LIBRARY}
 )
 
+target_link_libraries(node_IMUGPS
+  ${catkin_LIBRARIES}
+  # ${Boost_THREAD_LIBRARY}
+  # ${Boost_REGEX_LIBRARY}
+  # ${Boost_SERIALIZATION_LIBRARY}
+)
+
 #############
 ## Install ##
 #############
@@ -199,7 +208,7 @@ target_link_libraries(node_miniCT
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
-catkin_install_python(PROGRAMS src/alti/node_AltiVA500.py src/dvl/node_DVL.py src/imu/node_IMUGPS.py src/miniCT/node_miniCT.py src/imu/node_navigasi.py
+catkin_install_python(PROGRAMS src/alti/node_AltiVA500.py src/dvl/node_DVL.py src/imu/node_IMUGPS.py src/miniCT/node_miniCT.py src/node_navigasi.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
