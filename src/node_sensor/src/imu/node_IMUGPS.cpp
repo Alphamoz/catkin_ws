@@ -82,43 +82,6 @@ int main(int argc, char *argv[]) {
 	imumsg.header.stamp.nsec=0;
 	imumsg.header.frame_id='0';
 
-	// spatial_msg.NED.north = 0;
-	// spatial_msg.NED.east = 0;
-	// spatial_msg.NED.depth = 0;
-
-	// spatial_msg.Gps.status.status=0;
-	// spatial_msg.Gps.status.service=1; // fixed to GPS
-	// spatial_msg.Gps.latitude=0.0;
-	// spatial_msg.Gps.longitude=0.0;
-	// spatial_msg.Gps.altitude=0.0;
-	// spatial_msg.Gps.position_covariance={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
-	// spatial_msg.Gps.position_covariance_type=2; // fixed to variance on the diagonal
-
-	// spatial_msg.Twist.linear.x=0.0;
-	// spatial_msg.Twist.linear.y=0.0;
-	// spatial_msg.Twist.linear.z=0.0;
-	// spatial_msg.Twist.angular.x=0.0;
-	// spatial_msg.Twist.angular.y=0.0;
-	// spatial_msg.Twist.angular.z=0.0;
-
-	// spatial_msg.Imu.orientation.x=0.0;
-	// spatial_msg.Imu.orientation.y=0.0;
-	// spatial_msg.Imu.orientation.z=0.0;
-	// spatial_msg.Imu.orientation.w=0.0;
-	// spatial_msg.orientationCovariance={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
-	// spatial_msg.Imu.angular_velocity.x=0.0;
-	// spatial_msg.Imu.angular_velocity.y=0.0;
-	// spatial_msg.Imu.angular_velocity.z=0.0;
-	// spatial_msg.Imu.angular_velocity_covariance={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0}; // fixed
-	// spatial_msg.Imu.linear_acceleration.x=0.0;
-	// spatial_msg.Imu.linear_acceleration.y=0.0;
-	// spatial_msg.Imu.linear_acceleration.z=0.0;
-	// spatial_msg.linearAccelerationCovariance={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0}; // fixed
-
-	// spatial_msg.RPY.roll = 0;
-	// spatial_msg.RPY.pitch = 0;
-	// spatial_msg.RPY.yaw = 0;
-
 	// get data from com port //
 	an_decoder_t an_decoder;
 	an_packet_t *an_packet;
@@ -428,7 +391,7 @@ int main(int argc, char *argv[]) {
 				// system_status_pub.publish(system_status_msg);
 				// filter_status_pub.publish(filter_status_msg);
 			}
-			IMUGPSpublisher.publish(imumsg);
+			// IMUGPSpublisher.publish(imumsg);
 		}
 	}
 
